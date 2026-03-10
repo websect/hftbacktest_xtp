@@ -6,7 +6,7 @@
 
 ## 当前配置
 
-- **Origin**: https://github.com/nkaz001/hftbacktest.git (你的工作仓库)
+- **Origin**: git@github.com:websect/hftbacktest_xtp.git (你的工作仓库)
 - **Upstream**: https://github.com/nkaz001/hftbacktest.git (上游原始仓库)
 
 ## 目录结构
