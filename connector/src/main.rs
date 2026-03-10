@@ -35,6 +35,7 @@ use crate::{
     binancefutures::BinanceFutures,
     binancespot::BinanceSpot,
     bybit::Bybit,
+    ctp::Ctp,
     connector::{Connector, ConnectorBuilder, GetOrders, PublishEvent},
 };
 
@@ -44,6 +45,8 @@ pub mod binancefutures;
 pub mod binancespot;
 #[cfg(feature = "bybit")]
 pub mod bybit;
+#[cfg(feature = "ctp")]
+pub mod ctp;
 
 mod connector;
 //mod fuse;
@@ -325,6 +328,7 @@ struct Args {
     /// Connector
     /// * binancefutures: Binance USD-m Futures
     /// * bybit: Bybit Linear Futures
+    /// * ctp: CTP (China Futures Trading Protocol)
     connector: String,
 
     /// Connector's configuration file path.

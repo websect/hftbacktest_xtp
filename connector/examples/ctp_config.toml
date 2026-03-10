@@ -1,0 +1,29 @@
+# CTP 配置文件示例
+
+[ctp]
+# 期货公司配置
+broker_id = "9999"           # 期货公司 ID (需要从期货公司获取)
+investor_id = "your_investor_id"      # 投资者 ID (期货账号)
+password = "your_password"   # 密码
+app_id = "your_app_id"       # 应用 ID (需要从期货公司申请)
+auth_code = "your_auth_code" # 认证码 (需要从期货公司申请)
+
+# 前置服务器地址
+# 上海期货交易所
+front_md = "tcp://180.168.146.187:10131"  # 行情前置
+front_td = "tcp://180.168.146.187:10130"  # 交易前置
+
+# 大连商品交易所
+# front_md = "tcp://180.168.146.187:10141"
+# front_td = "tcp://180.168.146.187:10140"
+
+# 郑州商品交易所
+# front_md = "tcp://180.168.146.187:10151"
+# front_td = "tcp://180.168.146.187:10150"
+
+# 中国金融期货交易所
+# front_md = "tcp://180.168.146.187:10121"
+# front_td = "tcp://180.168.146.187:10120"
+
+# 订单配置
+order_prefix = "ctp_xtp"     # 订单前缀 (用于区分不同策略)
